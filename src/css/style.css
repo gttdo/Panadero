@@ -1,0 +1,107 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box; }
+
+.container {
+  display: grid;
+  grid-template-rows: 9vh 50vh 30vh 80vh 1fr; }
+
+.header {
+  color: black;
+  grid-column: 1 / -1;
+  padding: 0 2rem;
+  display: flex;
+  align-items: center; }
+  .header--logo {
+    margin-right: auto;
+    width: 5%; }
+    .header--logo-image {
+      width: 100%; }
+  .header--nav {
+    height: 6vh;
+    display: flex;
+    list-style: none;
+    align-items: center; }
+    .header--nav-item {
+      border-radius: 6%;
+      height: 4vh;
+      align-self: center;
+      display: flex; }
+      .header--nav-item:not(:last-child) {
+        margin-right: 5rem; }
+      .header--nav-item:hover {
+        background-color: goldenrod; }
+  .header--link {
+    font-size: 1.5rem;
+    font-family: sans-serif;
+    margin: 3rem;
+    align-self: center;
+    text-decoration: none;
+    color: currentColor; }
+
+.hero--pic {
+  background-image: linear-gradient(rgba(198, 153, 99, 0.5), rgba(177, 100, 6, 0.5)), url("../../src/assets/images/homePage.jpg");
+  background-size: cover; }
+
+.hero--story {
+  font-size: 2rem;
+  font-family: sans-serif;
+  padding: 5rem 10rem;
+  justify-items: center; }
+  .hero--story-header {
+    text-align: center;
+    margin-bottom: 2rem;
+    grid-column: 1 / -1; }
+  .hero--story-figure {
+    border-radius: 50%;
+    margin: 0 2.5rem 0.5rem 0;
+    float: left;
+    -webkit-shape-outside: circle(50% at 50% 50%);
+    shape-outside: circle(50% at 50% 50%); }
+  .hero--story-image {
+    width: 13rem;
+    height: 13rem;
+    border-radius: 100px; }
+  .hero--story-text {
+    line-height: 1.4;
+    text-align: justify; }
+
+.products {
+  background-color: peru;
+  padding: 5rem;
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); }
+  .products--item {
+    background-color: #fff;
+    border-radius: 20px;
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .products--item-image-pic {
+      border-radius: 20px;
+      width: 100%;
+      transform: translateY(-10px); }
+  .products--desc {
+    background-color: #fff;
+    font-size: 1.5rem;
+    padding: 3rem;
+    padding-top: 4rem;
+    transform: translateY(-25px); }
+    .products--desc-name {
+      text-align: center;
+      margin-bottom: 2rem; }
+
+.contact {
+  background-color: saddlebrown;
+  grid-column: 1 / -1; }
