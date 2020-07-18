@@ -9,7 +9,7 @@ class Products extends Component {
             <div id="products" className="products">
                 <div className="products--item">
                     <div className="products--item-image">
-                        <img className="products--item-image-pic" src={sourdough}/>
+                        <img className="products--item-image-pic" src={sourdough} alt="sourdough"/>
                     </div>
                     <div className="products--desc">
                         <h3 className="products--desc-name">Sourdough</h3>
@@ -21,7 +21,7 @@ class Products extends Component {
 
                 <div className="products--item">
                     <div className="products--item-image">
-                        <img className="products--item-image-pic" src={whiteBread}/>
+                        <img className="products--item-image-pic" src={whiteBread} alt="white bread"/>
                     </div>
                     <div className="products--desc">
                         <h3 className="products--desc-name">White Bread</h3>
@@ -33,7 +33,7 @@ class Products extends Component {
                 
                 <div className="products--item">
                     <div className="products--item-image">
-                        <img className="products--item-image-pic" src={flatBread}/>
+                        <img className="products--item-image-pic" src={flatBread} alt="flat bread"/>
                     </div>
                     <div className="products--desc">
                         <h3 className="products--desc-name">Flat Bread</h3>

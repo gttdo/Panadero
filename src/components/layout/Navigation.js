@@ -7,7 +7,7 @@ class Navigation extends Component {
         return(
             <header className="header">
                 <div className="header--logo">
-                    <img className="header--logo-image" src={Logo}/>
+                    <img className="header--logo-image" alt="logo" src={Logo}/>
                 </div>
                 <ul className="header--nav">
                     <li className="header--nav-item"><a className="header--link" href="#story">About Us</a></li>
